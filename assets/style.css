@@ -3,7 +3,82 @@
     padding: 0;
 }
 body{
-    padding: 10px;
+    padding: 100px;
+    margin: 0 auto;
     background: black;
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+/*navigation-start*/
+.nav-header{
+    display: flex;
+    flex-direction: row;
+     gap:2.5rem;
+}
+
+.Add-cont-img{
+    font-size: 22px;
+    text-decoration: none;
+    color: #fff;
+}
+/*navigation-end*/
+/*Home section start*/
+.Home-section{
+    background: #fff;
+    padding: 35px;
+    color: #000;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.Home-section-maindiv{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+.profile-pic{
+    font-size: 50px;
+}
+.Home-section-Name p{
+    font-size: 20px;
+    margin-top: 13px;
+}
+.Home-section-arrow1{
+    font-size: 18px;
+    margin-top: 18px;
+}
+/*Home section end*/
+
+
+/*media query*/
+@media screen and (max-width: 700px){
+    body{
+        padding: 50px;
+    }
+    /*navigation-start*/
+    .nav-header{
+        gap: 8.5rem;
+    }
+    /*navigation-end*/
+    /*Home section start*/
+    .Home-section{
+        padding: 10px;
+        margin-top: 30px;
+    }
+    .Home-section-maindiv{
+        padding: 5px;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+    .profile-pic{
+        font-size: 85px;
+    }
+    .Home-section-Name p{
+        font-size: 18px;
+        margin-top: 13px;
+    }
+    
+    /*Home section end*/
+}
+
+/*media query*/
