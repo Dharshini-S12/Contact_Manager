@@ -11,28 +11,6 @@ body{
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-/*navigation-start*/
-.nav-header{
-    display: flex;
-    flex-direction: row;
-    gap:2.5rem;
-}
-.nav-buton{
-    border: none;
-    background: none;
-    color: #fff;
-    cursor: pointer;
-}
-.Add-cont-img{
-    font-size: 22px;
-    text-decoration: none;
-    color: #fff;
-}
-.extra1{
-    text-decoration: none;
-    color: #fff;
-}
-/*navigation-end*/
 /*Home section start*/
 .Home-section{
     background: #fff;
@@ -80,20 +58,12 @@ body{
 /*media query*/
 @media screen and (max-width: 700px){
     body{
-        padding: 0px;
+        padding: 50px;
     }
-    /*navigation-start*/
-    .nav-header{
-        margin-top: 20px;
-        margin-left: 35px;
-        gap: 3rem;
-    }
-    /*navigation-end*/
     /*Home section start*/
     .Home-section{
         padding: 10px;
         margin-top: 30px;
-        border-radius: 0px;
     }
     .Home-section-maindiv{
         padding: 5px;
@@ -101,17 +71,14 @@ body{
         gap: 0.5rem;
     }
     .profile-pic{
-        font-size: 50px;
+        font-size: 60px;
     }
     .Home-section-Name p{
         font-size: 16px;
         margin-top: 5px;
     }
-    .Home-section-arrow2{
-        font-size: 18px;
-        margin-top: 20px;
-        margin-left: 40px;
-        color:#000;
+    .Home-section-arrow{
+        display: none;
     }
     
     /*Home section end*/
