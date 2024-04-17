@@ -36,10 +36,14 @@ body{
 /*Home section start*/
 .Home-section{
     background: #fff;
-    padding: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0px;
     color: #000;
-    margin-top: 30px;
-    border-radius: 10px;
+}
+.Home-section:hover{
+    background: #e1dcdc;
 }
 .Home-button{
     border: none;
@@ -90,11 +94,7 @@ body{
     }
     /*navigation-end*/
     /*Home section start*/
-    .Home-section{
-        padding: 10px;
-        margin-top: 30px;
-        border-radius: 0px;
-    }
+   
     .Home-section-maindiv{
         padding: 5px;
         flex-direction: row;

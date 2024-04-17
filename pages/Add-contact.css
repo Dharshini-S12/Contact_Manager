@@ -5,7 +5,7 @@
 body{
     padding-left: 500px;
     padding-right: 500px;
-    padding-top: 100px;
+    padding-top: 150px;
     margin: 0 auto;
     background: black;
     color: white;
@@ -14,44 +14,29 @@ body{
 /*Home section start*/
 .Home-section{
     background: #fff;
-    padding: 15px;
+    padding: 30px;
     color: #000;
-    margin-top: 30px;
     border-radius: 10px;
-}
-.Home-button{
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.Home-section-maindiv{
-    padding: 8px;
     display: flex;
-    flex-direction: row;
-    gap: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
-.profile-pic{
-    font-size: 80px;
+.input-field{
+    width: 210px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 17px;
 }
-.Home-section-Name p{
-    font-size: 18px;
-    margin-top: 13px;
+.save-btn{
+    width: 70px;
+    height: 30px;
+    font-size: 17px;
 }
-.Home-section-arrow2{
-    font-size: 27px;
-    margin-top: 30px;
-    margin-left: 40px;
-    color:#000;
-}
-.Home-section-arrow{
-    display: flex;
-    flex-direction: row;
-}
-.extra{
-    text-decoration: none;
-    color: #000;
-}
+
+
 /*Home section end*/
 
 
@@ -65,21 +50,7 @@ body{
         padding: 10px;
         margin-top: 30px;
     }
-    .Home-section-maindiv{
-        padding: 5px;
-        flex-direction: row;
-        gap: 0.5rem;
-    }
-    .profile-pic{
-        font-size: 60px;
-    }
-    .Home-section-Name p{
-        font-size: 16px;
-        margin-top: 5px;
-    }
-    .Home-section-arrow{
-        display: none;
-    }
+    
     
     /*Home section end*/
 }
