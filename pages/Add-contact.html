@@ -6,16 +6,39 @@
     <title>Add</title>
     <link rel="stylesheet" href="./Add-contact.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .table{
+            margin-top: 5%;
+        }
+        #table,td,th{
+            margin-top: 1%;
+            border-collapse: collapse;
+        
+        }
+    </style>
 </head>
 <body>
-    <section >
-        <form class="Home-section">
-            <input type="text" placeholder="Name" class="input-field"><br>
-            <input type="text" placeholder="Phone" class="input-field"><br>
-            <input type="text" placeholder="Email" class="input-field"><br>
-            <input type="text" placeholder="Address" class="input-field"><br>
-            <button class="save-btn" onclick="myBtn()">SAVE</button>
-        </form>
+    <section class="contact-container">
+        <div class="Home-section">
+            <input type="text" placeholder="Name" class="input-field" id="name"><br>
+            <input type="text" placeholder="Phone" class="input-field" id="phone"><br>
+            <input type="text" placeholder="Email" class="input-field" id="email"><br>
+            <input type="text" placeholder="Address" class="input-field" id="address"><br>
+            <button id="btn" class="save-btn">Submit</button>
+            <button id="upbtn" style="display: none">Update</button>   
+        </div>
+        <div class="table">
+            <button id="getdata">Get Data</button>
+            <div id="table"></div>
+        </div>
+
     </section>
+        
+
+    
+
+    
+
+    <script src="./Add-contact.js"></script>
 </body>
 </html>
