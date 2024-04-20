@@ -27,6 +27,7 @@ dataButton.addEventListener('click', async () => {
                             <div class="section-right-contacts">
                                 <div class="contact-1">
                                     <div class="c1">${e.fname}</div>
+                                    <div class="c2">${e.lname}</div>
                                     <div class="c3">${e.phone}</div>
                                 </div>
                                 <div class="contact-2">

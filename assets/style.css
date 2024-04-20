@@ -4,6 +4,7 @@
 }
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f3f4dc;
 }
 /* nav start */
 nav{
@@ -108,10 +109,6 @@ section{
     margin-left: 10px;
 }
 .section-right-contacts{
-    
-    margin-left: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
     display: flex;
     flex-direction: row;
     padding: 20px;
@@ -120,30 +117,31 @@ section{
 }
 .contact-1{
     display: flex;
-    width: 200px;
     gap: 3rem;
-    /* align-items: center; */
-    margin: 0 auto;
+    align-items: center;  
 }
 .contact-2{
     display: flex;
     flex-direction: row;
     align-items: center;
     width: fit-content;
-    margin-left: 600px;
-    gap: 3rem;
-    margin: 0 auto;
+    margin-left: 400px;
+    gap: 3rem;  
 }
-.c1,.c2,.c3{
-    width: 30px;
+.c1{
+    width: 50px;
 }
-.c2,.c3{
-    margin-left: 150px;
+.c2{
+    width: 50px;
+    margin-left: 100px;
 }
-#table{
+.c3{
+    margin-left: 100px;
+}
+/* #table{
     display: flex;
     flex-direction: column;    
-}
+} */
 .edit-btn{
     border: none;
     background: none;
@@ -159,7 +157,7 @@ section{
     /*section start*/
     .section-left{
         padding: 20px;
-        width: 345px;
+        width: 330px;
         height: 350px;
     }
     .form{
@@ -172,37 +170,51 @@ section{
     section{
         flex-direction: column;
     }
+    .section-right{
+        flex-direction: column;
+    }
+    .edit-btn{
+        font-size: 20px;
+        color: #f3f4dc;
+        
+    }
     .section-right-contacts{
-        margin-left: 1px;
-        border-radius: 5px;
-        margin-top: 10px;
-        display: flex;
-        flex-direction: row;
+        flex-direction: column;
         padding: 20px;
-        width: 300px;
+        width: 330px;
         font-size: 16px;
+        gap: 1rem;
     }
     .contact-1{
-        flex-direction: row;
-        width: fit-content;
-        gap: 10px;
+        display: flex;
+        gap: 3rem;
+        align-items: center;  
     }
     .contact-2{
+        display: flex;
         flex-direction: row;
-        margin-left: 14px;
-        margin-top: 1px;
-        gap: 0.5rem;
+        align-items: center;
+        justify-content: center;
+        width: 190px;
+        margin-left: 50px;
+        gap: 1.5rem; 
+        background: #089dad; 
+        border-radius: 50px;
+        height: 25px;
+        padding: 10px;
     }
-    .c1,.c2,.c3{
-        width: fit-content;
+    .c1{
+        width: 50px;
     }
-    .c2,.c3{
-        margin-left: 0px;
-    } 
-    .edit-btn{
+    .c2{
+        width: 50px;
+        margin-left: 20px;
         
-        font-size: 20px;
     }
+    .c3{
+        margin-left: 10px;
+    }
+    
     /*section end*/
 }
 
