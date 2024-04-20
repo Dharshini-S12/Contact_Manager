@@ -3,118 +3,103 @@
     padding: 0;
 }
 body{
-    padding-left: 500px;
-    padding-right: 500px;
-    padding-top: 100px;
-    margin: 0 auto;
-    background: black;
-    color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-/*navigation-start*/
-.nav-header{
+/* nav start */
+nav{
+    padding: 20px;
+    background-color: rgb(8, 157, 173);
+    color: rgb(243, 244, 220);
     display: flex;
-    flex-direction: row;
-    gap:2.5rem;
+    font-weight: bold;
+    gap: 5px;
 }
-.nav-buton{
-    border: none;
-    background: none;
-    color: #fff;
-    cursor: pointer;
+.nav-txt{
+    font-size: 18px;  
 }
-.Add-cont-img{
+.nav-img{
     font-size: 22px;
-    text-decoration: none;
-    color: #fff;
 }
-.extra1{
-    text-decoration: none;
-    color: #fff;
-}
-/*navigation-end*/
-/*Home section start*/
-.Home-section{
-    background: #fff;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 0px;
-    color: #000;
-}
-.Home-section:hover{
-    background: #e1dcdc;
-}
-.Home-button{
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.Home-section-maindiv{
-    padding: 8px;
-    display: flex;
-    flex-direction: row;
-    gap: 2.5rem;
-}
-.profile-pic{
-    font-size: 80px;
-}
-.Home-section-Name p{
+/* nav end */
+.text{
+    color: rgb(8, 157, 173);
+    background: rgb(243, 244, 220);
     font-size: 18px;
-    margin-top: 13px;
-}
-.Home-section-arrow2{
-    font-size: 27px;
-    margin-top: 30px;
-    margin-left: 40px;
-    color:#000;
-}
-.Home-section-arrow{
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
 }
-.extra{
-    text-decoration: none;
-    color: #000;
+.text-img{
+    font-size: 22px;
+    margin-top: 2px;
 }
-/*Home section end*/
+/* section-start */
+section{
+    display: flex;
+}
+.section-left{
+    background: #089dad;
+    color: #f3f4dc;
+    padding: 35px;
+    width: 250px;
+    height: 530px;
+    text-align: center;
+}
+.section-left-img{
+    width: 80px;
+    height: 90px;
+}
+.form{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.section-left-form-input{
+    padding: 7px;
+    width: 150px;
+    height: 25px;
+    background: #f3f4dc;
+    color: #089dad;
+    border: #089dad;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+}
+.save-btn{
+    background: #f3f4dc;
+    color: #089dad;
+    border: #089dad;
+    width: 70px;
+    height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: bold;
+}
+/* section-end */
 
 
-/*media query*/
 @media screen and (max-width: 700px){
-    body{
-        padding: 0px;
+    /*section start*/
+    .section-left{
+        padding: 20px;
+        width: 335px;
+        height: 350px;
     }
-    /*navigation-start*/
-    .nav-header{
-        margin-top: 20px;
-        margin-left: 35px;
-        gap: 3rem;
-    }
-    /*navigation-end*/
-    /*Home section start*/
-   
-    .Home-section-maindiv{
-        padding: 5px;
-        flex-direction: row;
+    .form{
         gap: 0.5rem;
     }
-    .profile-pic{
-        font-size: 50px;
+    .section-left-img{
+        width: 65px;
+        height: 70px;
     }
-    .Home-section-Name p{
-        font-size: 16px;
-        margin-top: 5px;
-    }
-    .Home-section-arrow2{
-        font-size: 18px;
-        margin-top: 20px;
-        margin-left: 40px;
-        color:#000;
-    }
-    
-    /*Home section end*/
+    /*section end*/
 }
 
-/*media query*/

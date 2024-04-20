@@ -8,37 +8,33 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <!--Nav start-->
+    <!-- Nav start -->
     <nav>
-        <div class="nav-header">
-            <div class="nav-left"><h3>CONTACTS</h3></div>
-            <button class="nav-buton" onclick="myAdd()"><a href="pages/Add-contact.html" class="extra1"><div class="nav-left"><h3>ADD +</h3></div></a></button>
-           <p id="demo">dfghj</p>
-            <!-- <div class="nav-right"><a href=" " class="Add-cont-img"><i class='bx bxs-message-alt-add'></i></a></div> -->
+        <div class="nav-img"><i class='bx bx-phone'></i></div>
+        <div class="nav-txt">CONTACTS</div>
+    </nav>
+    <!-- Nav end -->
+    <div class="text">
+        <div>GET YOUR NEW FRIENDS</div>
+        <div><i class='bx bx-happy text-img' ></i></div>
+    </div>
+    <!-- section start -->
+    <section>
+        <div class="section-left">
+            <p class="section-left-text">SAVE YOUR NEW<br> CONTACTS AND ENJOY<br> CONNECTING THEM!</p><br>
+            <img src="./images/profile-user.png" alt="img" class="section-left-img"><br>
+            <form class="form">
+                <input type="text" class="section-left-form-input" placeholder="First Name" id="fname">
+                <input type="text" class="section-left-form-input" placeholder="Last Name" id="lname">
+                <input type="text" class="section-left-form-input" placeholder="Phone Number" id="phone">
+                <button id="btn" class="save-btn">SAVE</button>
+                <button id="upbtn" style="display: none" class="save-btn">Update</button> 
+            </form>
         </div>
-    </nav><br>
-    <!--Nav start-->
-    <!--section start-->
-    <section class="Home-section">
-        <button class="Home-button">
-            <a href="./pages/view-contact.html " class="extra">
-                <div class="Home-section-maindiv">
-                    <div class="Home-section-profile">
-                        <i class='bx bx-child profile-pic'></i>
-                    </div>
-                    <div class="Home-section-Name">
-                        <p>Dharshiniselvaraj </p>
-                        <p> 8825589644</p>
-                    </div>
-                    <div class="Home-section-arrow">
-                        <i class='bx bx-phone-call Home-section-arrow2'></i>
-                        <i class='bx bx-message Home-section-arrow2'></i>
-                    </div>
-                </div>
-            </a>
-        </button>
+        <div class="section-right">
+
+        </div>
     </section>
-    <script src="./pages/Add-contact.js"></script>
-    <!--section end-->
+    <!-- section end -->
 </body>
 </html>
