@@ -1,7 +1,6 @@
-const myName = document.getElementById('name')
+const myFName = document.getElementById('fname')
+const myLName = document.getElementById('lname')
 const myphone = document.getElementById('phone')
-const myemail = document.getElementById('email')
-const myaddress = document.getElementById('address')
 const button = document.getElementById('btn')
 const updateButton = document.getElementById('upbtn')
 const table = document.getElementById('table')
@@ -14,10 +13,9 @@ button.addEventListener('click', () => {
     const id = Math.floor(Math.random()*100) // Giving random id to the user using random function
     const users = {
         id: `${id}`,
-        name: `${myName.value}`,
-        phone: `${myphone.value}`,
-        email: `${myemail.value}`,
-        address: `${myaddress.value}`
+        fname: `${myFName.value}`,
+        lname: `${myLName.value}`,
+        phone: `${myphone.value}`
     }
     handlePost(users) // Calling post function to post the users at the json server 
 })
@@ -25,36 +23,44 @@ button.addEventListener('click', () => {
 dataButton.addEventListener('click', async () => {
     const data = await handleGet() // Calling get function to get the users from the json server and it takes time to convert the data to json so await is used
     data.forEach( e => { // data is an array so forEach is used for all the users stored in the array
-        const newRow = //`<div>
-        //                 <i class='bx bx-child profile-pic'></i>
-        //                 <p>${e.id}
-        //                 ${e.name}
-        //                 ${e.phone}
-        //                 ${e.email}
-        //                 ${e.address}</p>
-        //                 <p><button onclick="handleEdit(${e.id},'${e.name}','${e.phone}','${e.email}','${e.address}')">Edit</button><button onclick="handleDelete(${e.id})">Delete</button></p>
-        //                 </div>`
+        const newRow = `
+                            <div class="section-right-contacts">
+                                <div class="contact-1">
+                                    <div class="c1">${e.fname}</div>
+                                    <div class="c3">${e.phone}</div>
+                                </div>
+                                <div class="contact-2">
+                                    <div><button class="edit-btn" onclick="handleEdit(${e.id},'${e.fname}','${e.lname}','${e.phone}')"><p class='bx bxs-edit'></p></button></div>
+                                    <div><button class="edit-btn" onclick="handleDelete(${e.id})"><p class='bx bx-user-x'></p></button></div>
+                                    <div><button class="edit-btn" onclick="mycall()"><p class='bx bx-phone-call '></p></button></div>
+                                    <div><button class="edit-btn" onclick="mymsg()"><p class='bx bx-message'></p></button></div>
+                                </div>
+   
+                            </div>    
+                            <hr>
+                            `
 
-`<section class="Home1-section">
+// `<section class="Home1-section">
                 
-                        <div class="Home1-section-maindiv">
-                            <div class="Home1-section-profile">
-                                <i class='bx bx-child profile1-pic'></i>
-                            </div>
-                            <div class="Home1-section-Name">
-                                <p>${e.name}</p>
-                                <p>${e.phone}</p>
-                            </div>
-                            <div class="Home1-section-arrow">
-                            <p><button onclick="handleEdit(${e.id},'${e.name}','${e.phone}','${e.email}','${e.address}')">Edit</button></p>
-                            <p><button onclick="handleDelete(${e.id})">Delete</button></p>
+//                         <div class="Home1-section-maindiv">
+//                             <div class="Home1-section-profile">
+//                                 <i class='bx bx-child profile1-pic'></i>
+//                             </div>
+//                             <div class="Home1-section-Name">
+//                                 <p>${e.fname}</p>
+//                                 <p>${e.lname}</p>
+//                                 <p>${e.phone}</p>
+//                             </div>
+//                             <div class="Home1-section-arrow">
+//                             <p><button onclick="handleEdit(${e.id},'${e.fname}','${e.lanme}','${e.phone}')">Edit</button></p>
+//                             <p><button onclick="handleDelete(${e.id})">Delete</button></p>
 
-                            </div>
-                        </div>
+//                             </div>
+//                         </div>
                 
-            </section>
-            <hr>
-            `
+//             </section>
+//             <hr>
+//             `
 
 
         table.innerHTML += newRow
@@ -109,12 +115,11 @@ const handleDelete = async (id) => {
     }
 }
 
-const handleEdit = (id,name,phone,email,address) => {
+const handleEdit = (id,fname,lname,phone) => {
     uid = id
-    myName.value = name
+    myFName.value = fname
+    myLName.value = lname
     myphone.value = phone
-    myemail.value = email
-    myaddress.value = address
     button.style.display = 'none'
     updateButton.style.display = 'block'
 }
@@ -123,17 +128,15 @@ updateButton.addEventListener('click', (e) => {
     e.preventDefault()
     const editedUser = {
         id: `${uid}`,
-        name : `${myName.value}`,
-        phone : `${myphone.value}`,
-        email : `${myemail.value}`,
-        address : `${myaddress.value}`
+        fname : `${myFName.value}`,
+        lname : `${myLName.value}`,
+        phone : `${myphone.value}`
     }
     console.log(editedUser)
     handleJsonEdit(editedUser)
-    myName.value = ''
+    myFName.value = ''
+    myLName.value = ''
     myphone.value = ''
-    myemail.value = ''
-    myaddress.value = ''
 })
 
 const handleJsonEdit = async (users) => {
@@ -153,7 +156,13 @@ const handleJsonEdit = async (users) => {
     }
 }
 
-function myAdd(){
-    document.getElementById('demo').innerHTML="clicked";
+
+function mycall(){
+    alert("Ringing");
 }
+function mymsg(){
+    alert("Messaging");
+}
+
+
 

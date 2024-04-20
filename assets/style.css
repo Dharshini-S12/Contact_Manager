@@ -36,9 +36,14 @@ nav{
     font-size: 22px;
     margin-top: 2px;
 }
+hr{
+    color: #089dad;
+    border: 1px solid #089dad;
+}
 /* section-start */
 section{
     display: flex;
+    background: #f3f4dc;
 }
 .section-left{
     background: #089dad;
@@ -83,6 +88,70 @@ section{
     padding: 10px;
     font-weight: bold;
 }
+.section-right{
+    background: #f3f4dc;
+    color: #089dad;
+    display: flex;
+    flex-direction: row;
+}
+.save-btn1{
+    color: #f3f4dc;
+    background: #089dad;
+    border: none;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 8px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.section-right-contacts{
+    
+    margin-left: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    width: 1150px;
+    font-size: 18px;
+}
+.contact-1{
+    display: flex;
+    width: 200px;
+    gap: 3rem;
+    /* align-items: center; */
+    margin: 0 auto;
+}
+.contact-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    margin-left: 600px;
+    gap: 3rem;
+    margin: 0 auto;
+}
+.c1,.c2,.c3{
+    width: 30px;
+}
+.c2,.c3{
+    margin-left: 150px;
+}
+#table{
+    display: flex;
+    flex-direction: column;    
+}
+.edit-btn{
+    border: none;
+    background: none;
+    color: #089dad;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 /* section-end */
 
 
@@ -99,6 +168,40 @@ section{
     .section-left-img{
         width: 65px;
         height: 70px;
+    }
+    section{
+        flex-direction: column;
+    }
+    .section-right-contacts{
+        margin-left: 1px;
+        border-radius: 5px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        width: 300px;
+        font-size: 16px;
+    }
+    .contact-1{
+        flex-direction: row;
+        width: fit-content;
+        gap: 10px;
+    }
+    .contact-2{
+        flex-direction: row;
+        margin-left: 14px;
+        margin-top: 1px;
+        gap: 0.5rem;
+    }
+    .c1,.c2,.c3{
+        width: fit-content;
+    }
+    .c2,.c3{
+        margin-left: 0px;
+    } 
+    .edit-btn{
+        
+        font-size: 20px;
     }
     /*section end*/
 }

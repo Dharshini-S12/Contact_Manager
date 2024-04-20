@@ -6,6 +6,16 @@
     <title>Contact Manager</title>
     <link rel="stylesheet" href="./assets/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .table{
+            margin-top: 5%;
+        }
+        #table,td,th{
+            margin-top: 1%;
+            border-collapse: collapse;
+        
+        }
+    </style>
 </head>
 <body>
     <!-- Nav start -->
@@ -18,23 +28,36 @@
         <div>GET YOUR NEW FRIENDS</div>
         <div><i class='bx bx-happy text-img' ></i></div>
     </div>
+    <hr>
     <!-- section start -->
     <section>
         <div class="section-left">
             <p class="section-left-text">SAVE YOUR NEW<br> CONTACTS AND ENJOY<br> CONNECTING THEM!</p><br>
             <img src="./images/profile-user.png" alt="img" class="section-left-img"><br>
-            <form class="form">
+            <div class="form">
                 <input type="text" class="section-left-form-input" placeholder="First Name" id="fname">
-                <input type="text" class="section-left-form-input" placeholder="Last Name" id="lname">
+                <!-- <input type="text" class="section-left-form-input" placeholder="Last Name" id="lname"> -->
                 <input type="text" class="section-left-form-input" placeholder="Phone Number" id="phone">
                 <button id="btn" class="save-btn">SAVE</button>
                 <button id="upbtn" style="display: none" class="save-btn">Update</button> 
-            </form>
+            </div>
         </div>
+        <!-- <div class="Home-section">
+            <input type="text" placeholder="Name" class="input-field" id="fname"><br>
+            <input type="text" placeholder="Name" class="input-field" id="lname"><br>
+            <input type="text" placeholder="Phone" class="input-field" id="phone"><br>
+            
+            <button id="btn" class="">Submit</button>
+            <button id="upbtn" >Update</button>   
+        </div> -->
         <div class="section-right">
-
+            <div class="table">
+                <button id="getdata" class="save-btn1">SHOW CONTACTS</button>
+                <div id="table"></div>
+            </div>
         </div>
     </section>
     <!-- section end -->
+    <script src="./pages/Add-contact.js"></script>
 </body>
 </html>
