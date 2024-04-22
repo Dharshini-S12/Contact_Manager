@@ -1,34 +1,10 @@
 {
   "users": [
     {
-      "id": "20",
-      "fname": "Mythili",
-      "lname": "S",
-      "phone": "9842234617"
-    },
-    {
-      "id": "86",
-      "fname": "Madhu",
-      "lname": "S",
-      "phone": "6374471844"
-    },
-    {
-      "id": "96",
-      "fname": "Dharshini",
-      "lname": "S",
-      "phone": "8825589644"
-    },
-    {
-      "id": "98",
-      "fname": "Poovitha",
-      "lname": "Natrajan",
-      "phone": "1234567890"
-    },
-    {
-      "id": "25",
-      "fname": "Dharshini",
-      "lname": "S",
-      "phone": "08825589644"
+      "id": "37",
+      "fname": "dora",
+      "lname": "g",
+      "phone": "g"
     }
   ]
 }
